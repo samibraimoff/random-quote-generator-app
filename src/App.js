@@ -16,17 +16,13 @@ const App = () => {
     }
   };
 
-  // const handleClick = () => {
-  //   fetchData();
-  // };
-
   useEffect(() => {
     fetchData();
   }, []);
 
   return (
     <div className='app'>
-      <Card data={advice} />
+      <Card data={advice} onClick={fetchData} />
     </div>
   );
 };
